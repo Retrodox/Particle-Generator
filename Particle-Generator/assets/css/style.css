@@ -1,0 +1,219 @@
+/* Reset some default margin and padding */
+@font-face {
+    font-family: 'micross';
+    src: url('../fonts/micross.ttf') format('truetype');
+  }
+
+html {
+    height: 100%; /* This ensures the html element covers the full height of the viewport */
+     }
+
+  body, h1, p, ul, li {
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* Set a background color and font color */
+body {
+    border: 1px solid #fff;
+    background: linear-gradient(to bottom, #b50d0d, #850000); /* Your gradient */
+    color: #e95200;
+    margin: 0; /* Removes default margin */
+    height: 100%; /* This makes sure the body element stretches to the full height of the html element */
+    min-height: 100vh; /* This uses vh (Viewport Height) units to ensure a minimum height based on the viewport */
+}
+  /* no highlighting bleh */
+  body {
+      -webkit-user-select: none;  /* Chrome, Safari, Opera */
+      -moz-user-select: none;     /* Firefox */
+      -ms-user-select: none;      /* IE 10+ */
+      user-select: none;          /* Standard syntax */
+  }
+  
+  /* Style the header */
+h1 {
+    border: 3px solid #fff;
+    font-family: 'micross', sans-serif;
+    font-size: 50px;
+    font-weight: normal border: 3px solid #fff;
+    background-color: #ff9d02;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0px 3px 3px #e95200, /* bottom */
+    3px 3px 0px #e95200, /* bottom-right */
+    -3px 3px 0px #e95200, /* bottom-left */
+    3px 0px 0px #e95200, /* right */
+    -3px 0px 0px #e95200, /* left */
+    0px -3px 0px #e95200, /* top */
+    3px -3px 0px #e95200, /* top-right */
+    -3px -3px 0px #e95200; /* top-left */
+}
+  /* Style the paragraph */
+  p {
+      margin: 20px;
+  }
+  
+  /* Style the navigation list */
+  ul {
+      list-style: none;
+      margin: 20px;
+  }
+  
+  /* Style the list items */
+  li {
+      margin-bottom: 10px;
+  }
+  
+  /* Style the links */
+  a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  /* Change link color on hover */
+  a:hover {
+      color: #ff9d02;
+  }
+  
+  
+  /* Style the footer */
+  footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ff9d02;
+      color: #fff;
+  }
+  #confetti-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Allow clicks through the container */
+      overflow: hidden;
+      z-index: 1;
+    }
+  
+    .confetti {
+      position: absolute;
+      opacity: 1;
+      transition: transform 2s ease-out, opacity 2s;
+      transform-origin: center;
+  }
+  
+  #toolbar {
+      border: 3px solid #fff;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ff9d02;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  #transparent-box {
+      position: fixed; /* Fixed position */
+      top: 60px;  /* Stick it to the top */
+      bottom: 70px;  /* Stick it to the bottom */
+      left: 0;  /* Stick it to the left */
+      right: 0;  /* Stick it to the right */
+      border: 3px solid #FFF; /* White border */
+      background: linear-gradient(to bottom, #e8ae00, #dea500); /* Gradient background */
+      z-index: 2; /* Place it behind other elements */
+      opacity: 0;
+  }
+  
+  
+  #confetti-btn {
+      font-family: 'micross', sans-serif;
+      background-color: #e95200;
+      color: #fff;
+      border: 2px solid transparent;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0px 0px 5px rgba(167, 85, 2, 0.65);
+  }
+  
+  #water-btn {
+      font-family: 'micross', sans-serif;
+      background-color: #e95200;
+      color: #fff;
+      border: 2px solid transparent;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0px 0px 5px rgba(167, 85, 2, 0.65);
+  }
+  
+  #fire-btn {
+      font-family: 'micross', sans-serif;
+      background-color: #e95200;
+      color: #fff;
+      border: 2px solid transparent;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0px 0px 5px rgba(167, 85, 2, 0.65);
+  }
+  
+  #firework-btn {
+      font-family: 'micross', sans-serif;
+      background-color: #e95200;
+      color: #fff;
+      border: 2px solid transparent;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0px 0px 5px rgba(167, 85, 2, 0.65);
+  }
+  
+  
+  
+  #toolbar button img {
+      width: 24px;
+      height: 24px;
+  }
+  
+  #firework-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Allow clicks through the container */
+      overflow: hidden;
+      z-index: 1;
+    }
+  
+    .firework {
+      position: absolute;
+      opacity: 1;
+      transition: transform 2s ease-out, opacity 2s;
+      transform-origin: center;
+  }
+  
+  .fire {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #FEDE17;
+    border-radius: 50%;
+    border: 2px solid #A9423F; /* Optionally make the particles circular */
+    opacity: 1; /* Start fully visible */
+    z-index: 1; /* Ensure it's above other elements */
+    transition: opacity 2s;
+  }
